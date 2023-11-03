@@ -3,6 +3,15 @@
 <h1>How to install this application? </h1>
 
 <b>Don't be intimidated by the long instructions, it's done quickly</b>
+
+<h1>Release 2.0 </h1>
+<li>1) You must download MUSIC CONTROLLLER.jar,app-release2.apk from Release 2.0 </li>
+<li>2) Start MUSIC CONTROLLER.jar on your PC,  click on "start server" button </li>
+<li>2) Install and start app-release2.apk on your mobile phone,  connect using IP and PORT shown in MUSIC CONTOLLER.jar </li>
+<li><em>Congrats, you can use my app</em></li>
+
+<h1>Release 1.0 </h1>
+
 <li>1) You must download the files: app-release, nircmd, pc controller, from my Release 1.0</li>
 <li>2) Move nircmd.exe to the Windows folder (most likely the path there is C:\Windows)</li>
 <li>3) Install app-release.apk on your phone</li>
