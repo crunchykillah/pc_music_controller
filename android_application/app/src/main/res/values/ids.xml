@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="buttonPlus" type="id" />
+    <item name="buttonMinus" type="id" />
+    <item name="volumeSeekBar" type="id" />
+</resources>

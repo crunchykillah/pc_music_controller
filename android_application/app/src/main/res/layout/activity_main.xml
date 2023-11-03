@@ -1,0 +1,206 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_gravity="center">
+
+    <!-- Bottom layout with textView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="MUSIC CONTROLLER"
+            android:textSize="55dp"
+            android:gravity="center"
+            android:fontFamily="@font/billionaire"
+            android:textColor="@color/aqua"/>
+
+
+    </LinearLayout>
+
+    <!-- Middle layout with fields for ip and port-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <!-- Under-layout with fields and button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextIP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter IP Adress"
+                android:layout_marginTop="30dp"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/aqua"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="40dp"
+                android:fontFamily="@font/first_font"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Enter Port"
+                android:textSize="40dp"
+                android:id="@+id/editTextPort"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/aqua"
+                android:textColorHint="@color/grey"
+                android:fontFamily="@font/first_font"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/connectButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="45dp"
+                android:fontFamily="@font/first_font"
+                android:backgroundTint="@color/grey"
+                android:text="Connect"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- Second-Middle layout with seekBar and text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change the volume"
+            android:textColor="@color/aqua"
+            android:fontFamily="@font/first_font"
+            android:textSize="50dp" />
+
+        <SeekBar
+            android:id="@+id/volumeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:max="100"
+            android:progress="50" />
+        <TextView
+            android:id="@+id/yourVolumeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your volume now: ..."
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/first_font"
+            android:textSize="40dp"
+            android:gravity="left"
+            />
+    </LinearLayout>
+    <!-- layout with mute/unmute buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <!-- Левая часть с кнопками -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonMute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mute       "
+                android:layout_marginBottom="5dp"
+                android:onClick="mute_click"
+                android:fontFamily="@font/first_font"
+                android:textSize="55dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/aqua"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonUnmute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="unmute_click"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/first_font"
+                android:text="Unmute    "
+                android:textSize="55dp"
+                android:backgroundTint="@color/aqua"
+                />
+        </LinearLayout>
+
+        <!-- Правая часть с TextView -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Press to mute"
+                android:fontFamily="@font/first_font"
+                android:textSize="55dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Press to unmute"
+                android:fontFamily="@font/first_font"
+                android:layout_marginRight="10dp"
+                android:textSize="55dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <!-- Button go to sys controls -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToSysButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/first_font"
+        android:textSize="35dp"
+        android:layout_marginBottom="5dp"
+        android:text="Go to System Controls"/>
+
+</LinearLayout>

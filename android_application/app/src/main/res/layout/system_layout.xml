@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonShutdownPC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHUTDOWN PC"
+        android:textSize="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/first_font"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStandby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:text="STANDBY"
+        android:textSize="50dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/first_font"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonShutdownServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_marginTop="20dp"
+
+        android:backgroundTint="@color/grey"
+        android:text="SHUTDOWN SERVER"
+        android:fontFamily="@font/first_font"
+        />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/skull"/>
+</LinearLayout>
